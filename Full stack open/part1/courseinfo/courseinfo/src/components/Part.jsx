@@ -7,7 +7,8 @@ const Part = ({individualPart}) => {
   return (
 <>
 <p>
-    {individualPart.name} {individualPart.exercises}
+{individualPart.name} {individualPart.exercises}
+    
 </p>
 
 </>

@@ -5,9 +5,10 @@ export const Content = ({courseParts}) => {
     
   return (
     <div>
-    <Part individualPart={courseParts[0]}/>
-    <Part individualPart={courseParts[1]}/>
-    <Part individualPart={courseParts[2]}/>
+      {courseParts.map((course)=>{
+       console.log(course);
+     return  <Part individualPart={course}/>
+      })}
     </div>
   )
 }

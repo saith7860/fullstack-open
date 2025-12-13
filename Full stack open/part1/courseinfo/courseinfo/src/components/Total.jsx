@@ -2,17 +2,12 @@ import React from 'react'
 
 const Total = ({courseParts}) => {
   console.log(courseParts);
-  
-  let total=0;
-  for (let i = 0; i < courseParts.length; i++) {
-    console.log(courseParts[i].exercises);
-    
-    total+=courseParts[i].exercises;
-    
-  }
+  const total=courseParts.reduce((s,p)=>{
+    return s+p.exercises
+  },0)
   return (
-    <p>Number of Exercises {total} </p>
+    <p><b>total of {total} exercises</b></p>
   )
 }
 
-export default Total
+export default Total;
