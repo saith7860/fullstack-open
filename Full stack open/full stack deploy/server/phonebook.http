@@ -1,0 +1,15 @@
+@hostname=http://localhost:3001
+GET {{hostname}}/api/person/7 HTTP/1.1
+###
+DELETE {{hostname}}/api/person/3 HTTP/1.1
+###
+GET {{hostname}}/info  HTTP/1.1
+###
+POST {{hostname}}/api/persons HTTP/1.1
+
+content-type:application/json
+
+{
+    "name":"messsaage recived",
+     "number":"523523523"
+}
